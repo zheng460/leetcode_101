@@ -8,6 +8,9 @@
  * 
  * @author: yuanfengli
  * @date: 06052024
+ * 
+ * Time complexity: O(n)
+ * Space complexity: O(1)
  */
 var countSubarrays = function(nums, k) {
     // edge case: 
@@ -21,9 +24,7 @@ var countSubarrays = function(nums, k) {
     let curK = 0;
     let result = 0; 
     let max = Math.max(...nums);
-    // console.log(max);
 
-    // while (r < nums.length) {
     for (r = 0; r < nums.length; r++) {
         if (nums[r] === max) {
             curK++;
