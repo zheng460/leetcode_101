@@ -39,6 +39,9 @@ i === 2:
 dp [1, 30, 45]
 
 return last element in dp arr, will get your answer!.
+
+Time complexity: O(k * n);
+Space complexity: O(n);
  */
 var maxSumAfterPartitioning = function(arr, k) {
     // clarify: do we consider edge case: 
